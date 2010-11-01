@@ -33,7 +33,7 @@
 		
 		$query="select * from restaurants where type='Fast Food'";
                 $results=mysqli_query($db,$query);
-                echo"Casual Dinning Restaurants:<br>";
+                echo"Fast Food Restaurants:<br>";
                 while($row=mysqli_fetch_array($results)){
                         if ($row['website']!=NULL){
                                 echo "<a href='".$row['website']."' target='_blank'>".$row['name']."</a><br>";
