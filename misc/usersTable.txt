@@ -1,8 +1,0 @@
-users:
-userID
-Name
-password
-age
-zipcode
-student (bool)
-email
