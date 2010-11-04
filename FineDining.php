@@ -34,11 +34,12 @@
                 $results=mysqli_query($db,$query);
                 echo"Fine Dinning Restaurants:<br>";
                 while($row=mysqli_fetch_array($results)){
-                        if ($row['website']!=NULL){
+                        /*if ($row['website']!=NULL){
                                 echo "<a href='".$row['website']."' target='_blank'>".$row['name']."</a><br>";
                         }else{
                                 echo "<font color='white'>".$row['name']."</font>"."<br>";
-                        }
+                        }*/
+                        echo "<a href='ResProfile.php?id=".$row['resID']."'>".$row['name']."</a><br>";
                 }
 
 		
