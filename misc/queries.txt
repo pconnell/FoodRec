@@ -1,0 +1,10 @@
+select * from user_res where resID=a;
+select * from user_res where resID=b;
+
+select * (from user_res where resID=a) as resA join
+(select * from user_res where resID=b) as resB where resA.userID=resB.userID;
+
+select * from (user_res where resID=1) as resA join
+(user_res where resID=2) as resB where resA.userID=resB.userID
+
+select * from user_res as resA join user_res as resB where resA.resID=1 and resB.resID=2 and resA.userID=resB.userID;

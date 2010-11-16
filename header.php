@@ -1,11 +1,17 @@
 <HTML>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>BandLink</title>
+  <title></title>
   <!--<link rel="stylesheet" type="text/css" href="style.css" />-->
 </head>
 <body link='yellow' alink='yellow' vlink='yellow'>
-	<a href="index.php">Main Page</a><br>
+	<?php
+	if(isset($_SESSION['username'])){
+		echo "Hello <font color=yellow>".$_SESSION['username']."</font>";
+		echo " |(<a href=logout.php>Logout</a>)";
+	}
+	?>
+	<br><a href="index.php">Main Page</a><br>
 	<a href="CasualDining.php">Casual Dining</a>
 	|
 	<a href="FastFood.php">Fast Food</a>

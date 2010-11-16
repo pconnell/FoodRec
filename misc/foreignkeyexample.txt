@@ -1,0 +1,18 @@
+CREATE TABLE user_res(
+userID int NOT NULL,
+resID int NOT NULL,
+breakfast int,
+lunch int,
+dinner int,
+monday int,
+tuesday int,
+wednesday int,
+thursday int,
+friday int,
+saturday int,
+sunday int,
+userRating int,
+PRIMARY KEY(userID,resID),
+FOREIGN KEY(userID) REFERENCES users(userID),
+FOREIGN KEY(resID) REFERENCES restaurants(resID)
+)ENGINE=INNODB;

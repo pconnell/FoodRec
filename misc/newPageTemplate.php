@@ -12,14 +12,15 @@
    	<div id="main">
   
 	<?php
-	
-	echo "<p><span style=\"color:red\"><b>Food Team Members:</B></span><br/>";
+	/*
+	$testArray=array("first item"=>array("1"=>"one"), "second item"=>array("2"=>"two"));
+	echo $testArray["first item"]["1"];
+	echo $testArray["second item"]["2"];
+	*/
+	echo "<p><span style=\"color:red\"><b>Recommended Food:</B></span><br/>";
 	include("header.php");
-
+  	
 	?>
-	<h4><a href=''>Patrick Connelly</a></h4>
-	<h4><a href=''>Thomas Cormier</a></h4>
-	<h4><a href=''>Patrick Taitt</a></h4>
 	</div>	
 	
     <?php include("projectSideBar.php"); ?>
